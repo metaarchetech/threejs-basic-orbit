@@ -1,11 +1,36 @@
 .container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.display {
+  color: white;
+  min-width: 120px;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.arrowButton {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+  font-size: 16px;
+}
+
+.arrowButton:hover {
+  background: #3a3a3a;
+  transform: scale(1.1);
 }
 
 .button {

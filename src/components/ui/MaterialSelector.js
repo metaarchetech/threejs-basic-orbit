@@ -10,12 +10,12 @@ function MaterialSelector({ currentMaterial, onMaterialChange }) {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.materialSelector}>
       {materials.map((mat) => (
         <button
           key={mat.id}
           onClick={() => onMaterialChange(mat.id)}
-          className={currentMaterial === mat.id ? styles.buttonActive : styles.button}
+          className={`${styles.materialButton} ${currentMaterial === mat.id ? styles.active : ''}`}
         >
           {mat.name}
         </button>

@@ -1,0 +1,42 @@
+.audioControls {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.controlButton {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #4a90e2;
+  border-radius: 4px;
+  background: transparent;
+  color: #4a90e2;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controlButton:hover {
+  background: rgba(74, 144, 226, 0.1);
+}
+
+.controlButton.active {
+  background: #4a90e2;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .audioControls {
+    flex-direction: column;
+    bottom: 1rem;
+    width: 90%;
+    max-width: 300px;
+  }
+} 
